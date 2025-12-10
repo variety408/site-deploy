@@ -6,16 +6,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Add this line to use Vazirmatn for all text */
     font-family: Vazirmatn, sans-serif; 
+    
+    /* ADDED: Improved line spacing for readability (usually 1.4 to 1.6 is best) */
+    line-height: 1.6; 
 }
 
 .content-container {
-    /* Use MARGIN to create the 20% whitespace from the screen edges */
+    /* Use MARGIN to create the 20% whitespace from the screen edges (Desktop) */
     margin: 20px 20% 20px 20%; 
     
-    /* The content area background is also white */
     background-color: #ffffff;
     
     /* Add internal padding for space between the text and the container boundary */
@@ -30,6 +30,14 @@ body {
 /* Align the text within the title div to the center */
 .content-container .title {
     text-align: center;
+    /* ADDED: Add margin below the centered title so it doesn't touch the main content */
+    margin-bottom: 30px; 
+}
+
+/* ADDED: Ensure paragraphs have consistent vertical rhythm/spacing */
+.content-container p {
+    margin-bottom: 20px; /* Space between paragraphs */
+    margin-top: 0;
 }
 
 /* Style for the image */
@@ -37,13 +45,13 @@ body {
     max-width: 100%; 
     height: auto;
     display: block; 
-    margin: 20px auto; 
+    margin: 20px auto; /* Centers the image within its container */
 }
 
 /* Media query for smaller screens to reduce the large 20% margin */
 @media (max-width: 768px) {
     .content-container {
-        /* On small screens, reduce margins so content doesn't get squeezed */
+        /* On small screens, margins are reduced to 5% */
         margin: 10px 5%; 
         padding: 15px;
     }
