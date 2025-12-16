@@ -6,7 +6,7 @@ title = "Dorensa"
 theme = "HelloWhite"
 
 # Ensure "page" is NOT disabled here
-disableKinds = ["taxonomy", "section", "RSS", "sitemap", "robotsTXT", "404", "home"] 
+disableKinds = ["taxonomy", "section", "RSS", "sitemap", "robotsTXT", "home"] 
 
 [taxonomies]
   category = ""
